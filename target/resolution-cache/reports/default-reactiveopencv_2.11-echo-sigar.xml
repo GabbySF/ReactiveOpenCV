@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="reactiveopencv_2.11"
+		revision="1.0"
+		conf="echo-sigar"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar"
+		date="20150520161129"/>
+	<dependencies>
+		<module organisation="com.typesafe.trace" name="echo-sigar-libs">
+			<revision name="0.1.14" status="release" pubdate="20150421075716" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<metadata-artifact status="no" details="" size="2243" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.trace/echo-sigar-libs/ivy-0.1.14.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/echo-sigar-libs/0.1.14/echo-sigar-libs-0.1.14.pom"/>
+				<caller organisation="default" name="reactiveopencv_2.11" conf="echo-sigar" rev="0.1.14" rev-constraint-default="0.1.14" rev-constraint-dynamic="0.1.14" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="echo-sigar-libs" type="jar" ext="jar" status="no" details="" size="2099399" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.trace/echo-sigar-libs/jars/echo-sigar-libs-0.1.14.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/echo-sigar-libs/0.1.14/echo-sigar-libs-0.1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

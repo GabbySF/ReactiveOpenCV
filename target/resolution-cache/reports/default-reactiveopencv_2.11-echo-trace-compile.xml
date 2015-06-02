@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="reactiveopencv_2.11"
+		revision="1.0"
+		conf="echo-trace-compile"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar"
+		date="20150520161129"/>
+	<dependencies>
+		<module organisation="com.typesafe.trace" name="echo-trace-akka-2.3.9_2.11">
+			<revision name="0.1.14" status="release" pubdate="20150421075958" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<metadata-artifact status="no" details="" size="3352" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.trace/echo-trace-akka-2.3.9_2.11/ivy-0.1.14.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/echo-trace-akka-2.3.9_2.11/0.1.14/echo-trace-akka-2.3.9_2.11-0.1.14.pom"/>
+				<caller organisation="default" name="reactiveopencv_2.11" conf="compile, echo-trace-compile, runtime-internal, runtime, optional" rev="0.1.14" rev-constraint-default="0.1.14" rev-constraint-dynamic="0.1.14" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="echo-trace-akka-2.3.9_2.11" type="jar" ext="jar" status="no" details="" size="151102" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.trace/echo-trace-akka-2.3.9_2.11/jars/echo-trace-akka-2.3.9_2.11-0.1.14.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/echo-trace-akka-2.3.9_2.11/0.1.14/echo-trace-akka-2.3.9_2.11-0.1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource" name="sigar">
+			<revision name="1.6.4" status="release" pubdate="20110322120456" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<metadata-artifact status="no" details="" size="2979" time="0" location="/Users/gabriele.derossi/.ivy2/cache/org.fusesource/sigar/ivy-1.6.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-akka-2.3.9_2.11" conf="default, compile, runtime, master" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="0.1.14"/>
+				<artifacts>
+					<artifact name="sigar" type="jar" ext="jar" status="no" details="" size="428580" time="0" location="/Users/gabriele.derossi/.ivy2/cache/org.fusesource/sigar/jars/sigar-1.6.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="log4j" name="log4j">
+			<revision name="1.2.15" status="release" pubdate="20070830104116" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org:80/log4j/1.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3561" time="0" location="/Users/gabriele.derossi/.ivy2/cache/log4j/log4j/ivy-1.2.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom"/>
+				<caller organisation="org.fusesource" name="sigar" conf="compile, runtime" rev="1.2.15" rev-constraint-default="1.2.15" rev-constraint-dynamic="1.2.15" callerrev="1.6.4"/>
+				<artifacts>
+					<artifact name="log4j" type="jar" ext="jar" status="no" details="" size="391834" time="0" location="/Users/gabriele.derossi/.ivy2/cache/log4j/log4j/jars/log4j-1.2.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-slf4j_2.11">
+			<revision name="2.3.9" status="release" pubdate="20150120011950" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3062" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="file:/Users/gabriele.derossi/activator-1.3.2/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.9/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-akka-2.3.9_2.11" conf="default, compile, runtime, master" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="0.1.14"/>
+				<artifacts>
+					<artifact name="akka-slf4j_2.11" type="jar" ext="jar" status="no" details="" size="15459" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.9.jar">
+						<origin-location is-local="false" location="file:/Users/gabriele.derossi/activator-1.3.2/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.9/jars/akka-slf4j_2.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.5" status="release" pubdate="20130325165215" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<metadata-artifact status="no" details="" size="4459" time="0" location="/Users/gabriele.derossi/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.5.xml" searched="false" origin-is-local="true" origin-location="/Users/gabriele.derossi/activator-1.3.2/repository/org.slf4j/slf4j-api/1.7.5/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="2.3.9"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="26084" time="0" location="/Users/gabriele.derossi/activator-1.3.2/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar">
+						<origin-location is-local="true" location="/Users/gabriele.derossi/activator-1.3.2/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-remote_2.11">
+			<revision name="2.3.9" status="release" pubdate="20150119222018" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3822" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.11/2.3.9/akka-remote_2.11-2.3.9.pom"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-akka-2.3.9_2.11" conf="default, compile, runtime, master" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="0.1.14"/>
+				<artifacts>
+					<artifact name="akka-remote_2.11" type="jar" ext="jar" status="no" details="" size="1333898" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.3.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.11/2.3.9/akka-remote_2.11-2.3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.uncommons.maths" name="uncommons-maths">
+			<revision name="1.2.2a" status="release" pubdate="20110408095605" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maths.uncommons.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2727" time="0" location="/Users/gabriele.derossi/.ivy2/cache/org.uncommons.maths/uncommons-maths/ivy-1.2.2a.xml" searched="false" origin-is-local="true" origin-location="/Users/gabriele.derossi/activator-1.3.2/repository/org.uncommons.maths/uncommons-maths/1.2.2a/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="compile, runtime" rev="1.2.2a" rev-constraint-default="1.2.2a" rev-constraint-dynamic="1.2.2a" callerrev="2.3.9"/>
+				<artifacts>
+					<artifact name="uncommons-maths" type="jar" ext="jar" status="no" details="" size="49019" time="0" location="/Users/gabriele.derossi/activator-1.3.2/repository/org.uncommons.maths/uncommons-maths/1.2.2a/jars/uncommons-maths.jar">
+						<origin-location is-local="true" location="/Users/gabriele.derossi/activator-1.3.2/repository/org.uncommons.maths/uncommons-maths/1.2.2a/jars/uncommons-maths.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.8.0.Final" status="release" pubdate="20131107042312" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="5415" time="0" location="/Users/gabriele.derossi/.ivy2/cache/io.netty/netty/ivy-3.8.0.Final.xml" searched="false" origin-is-local="true" origin-location="/Users/gabriele.derossi/activator-1.3.2/repository/io.netty/netty/3.8.0.Final/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="compile, runtime" rev="3.8.0.Final" rev-constraint-default="3.8.0.Final" rev-constraint-dynamic="3.8.0.Final" callerrev="2.3.9"/>
+				<artifacts>
+					<artifact name="netty" type="bundle" ext="jar" status="no" details="" size="1230201" time="0" location="/Users/gabriele.derossi/activator-1.3.2/repository/io.netty/netty/3.8.0.Final/bundles/netty.jar">
+						<origin-location is-local="true" location="/Users/gabriele.derossi/activator-1.3.2/repository/io.netty/netty/3.8.0.Final/bundles/netty.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.trace" name="echo-trace-scala-protobuf25-2.11">
+			<revision name="0.1.14" status="release" pubdate="20150520153138" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<metadata-artifact status="no" details="" size="2780" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.trace/echo-trace-scala-protobuf25-2.11/ivy-0.1.14.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/echo-trace-scala-protobuf25-2.11/0.1.14/echo-trace-scala-protobuf25-2.11-0.1.14.pom"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-akka-2.3.9_2.11" conf="default, compile, runtime, master" rev="0.1.14" rev-constraint-default="0.1.14" rev-constraint-dynamic="0.1.14" callerrev="0.1.14"/>
+				<artifacts>
+					<artifact name="echo-trace-scala-protobuf25-2.11" type="jar" ext="jar" status="no" details="" size="26892" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.trace/echo-trace-scala-protobuf25-2.11/jars/echo-trace-scala-protobuf25-2.11-0.1.14.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/echo-trace-scala-protobuf25-2.11/0.1.14/echo-trace-scala-protobuf25-2.11-0.1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.aspectj" name="aspectjrt">
+			<revision name="1.8.4" status="release" pubdate="20141106125507" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.aspectj.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="2383" time="0" location="/Users/gabriele.derossi/.ivy2/cache/org.aspectj/aspectjrt/ivy-1.8.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.8.4/aspectjrt-1.8.4.pom"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-akka-2.3.9_2.11" conf="default, compile, runtime, master" rev="1.8.4" rev-constraint-default="1.8.4" rev-constraint-dynamic="1.8.4" callerrev="0.1.14"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-scala-protobuf25-2.11" conf="compile, runtime" rev="1.8.4" rev-constraint-default="1.8.4" rev-constraint-dynamic="1.8.4" callerrev="0.1.14"/>
+				<artifacts>
+					<artifact name="aspectjrt" type="jar" ext="jar" status="no" details="" size="117512" time="0" location="/Users/gabriele.derossi/.ivy2/cache/org.aspectj/aspectjrt/jars/aspectjrt-1.8.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.8.4/aspectjrt-1.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.trace" name="echo-trace211-protobuf25_2.11">
+			<revision name="0.1.14" status="release" pubdate="20150520153139" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<metadata-artifact status="no" details="" size="2854" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.trace/echo-trace211-protobuf25_2.11/ivy-0.1.14.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/echo-trace211-protobuf25_2.11/0.1.14/echo-trace211-protobuf25_2.11-0.1.14.pom"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-scala-protobuf25-2.11" conf="compile, runtime" rev="0.1.14" rev-constraint-default="0.1.14" rev-constraint-dynamic="0.1.14" callerrev="0.1.14"/>
+				<artifacts>
+					<artifact name="echo-trace211-protobuf25_2.11" type="jar" ext="jar" status="no" details="" size="100727" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.trace/echo-trace211-protobuf25_2.11/jars/echo-trace211-protobuf25_2.11-0.1.14.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/echo-trace211-protobuf25_2.11/0.1.14/echo-trace211-protobuf25_2.11-0.1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.trace" name="echo-event211-protobuf25_2.11">
+			<revision name="0.1.14" status="release" pubdate="20150421092531" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<metadata-artifact status="no" details="" size="2765" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.trace/echo-event211-protobuf25_2.11/ivy-0.1.14.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/echo-event211-protobuf25_2.11/0.1.14/echo-event211-protobuf25_2.11-0.1.14.pom"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace211-protobuf25_2.11" conf="compile, runtime" rev="0.1.14" rev-constraint-default="0.1.14" rev-constraint-dynamic="0.1.14" callerrev="0.1.14"/>
+				<artifacts>
+					<artifact name="echo-event211-protobuf25_2.11" type="jar" ext="jar" status="no" details="" size="578370" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.trace/echo-event211-protobuf25_2.11/jars/echo-event211-protobuf25_2.11-0.1.14.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/echo-event211-protobuf25_2.11/0.1.14/echo-event211-protobuf25_2.11-0.1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.trace" name="echo-trace-protocol-protobuf25">
+			<revision name="0.1.14" status="release" pubdate="20150421075025" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<metadata-artifact status="no" details="" size="2472" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.trace/echo-trace-protocol-protobuf25/ivy-0.1.14.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/echo-trace-protocol-protobuf25/0.1.14/echo-trace-protocol-protobuf25-0.1.14.pom"/>
+				<caller organisation="com.typesafe.trace" name="echo-event211-protobuf25_2.11" conf="compile, runtime" rev="0.1.14" rev-constraint-default="0.1.14" rev-constraint-dynamic="0.1.14" callerrev="0.1.14"/>
+				<artifacts>
+					<artifact name="echo-trace-protocol-protobuf25" type="jar" ext="jar" status="no" details="" size="279985" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.trace/echo-trace-protocol-protobuf25/jars/echo-trace-protocol-protobuf25-0.1.14.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/echo-trace-protocol-protobuf25/0.1.14/echo-trace-protocol-protobuf25-0.1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.protobuf" name="protobuf-java">
+			<revision name="2.5.0" status="release" pubdate="20130307191811" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/protobuf" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2803" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-2.5.0.xml" searched="false" origin-is-local="false" origin-location="file:/Users/gabriele.derossi/activator-1.3.2/repository/com.google.protobuf/protobuf-java/2.5.0/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-protocol-protobuf25" conf="compile, runtime" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="0.1.14"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="compile, runtime" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="2.3.9"/>
+				<artifacts>
+					<artifact name="protobuf-java" type="bundle" ext="jar" status="no" details="" size="533455" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar">
+						<origin-location is-local="false" location="file:/Users/gabriele.derossi/activator-1.3.2/repository/com.google.protobuf/protobuf-java/2.5.0/bundles/protobuf-java.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalafx" name="scalafx_2.11">
+			<revision name="8.0.0-R4" status="release" pubdate="20140422211618" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://code.google.com/p/scalafx/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+				<license name="BSD" url="https://code.google.com/p/scalafx/source/browse/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2899" time="0" location="/Users/gabriele.derossi/.ivy2/cache/org.scalafx/scalafx_2.11/ivy-8.0.0-R4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalafx/scalafx_2.11/8.0.0-R4/scalafx_2.11-8.0.0-R4.pom"/>
+				<caller organisation="default" name="reactiveopencv_2.11" conf="compile, echo-trace-compile, runtime-internal, runtime, optional" rev="8.0.0-R4" rev-constraint-default="8.0.0-R4" rev-constraint-dynamic="8.0.0-R4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalafx_2.11" type="jar" ext="jar" status="no" details="" size="2144519" time="0" location="/Users/gabriele.derossi/.ivy2/cache/org.scalafx/scalafx_2.11/jars/scalafx_2.11-8.0.0-R4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalafx/scalafx_2.11/8.0.0-R4/scalafx_2.11-8.0.0-R4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.11">
+			<revision name="2.3.11" status="release" pubdate="20150508074512" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2667" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/ivy-2.3.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.3.11/akka-actor_2.11-2.3.11.pom"/>
+				<caller organisation="default" name="reactiveopencv_2.11" conf="compile, echo-trace-compile, runtime-internal, runtime, optional" rev="2.3.11" rev-constraint-default="2.3.11" rev-constraint-dynamic="2.3.11" callerrev="1.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="compile, runtime" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="2.3.9"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-akka-2.3.9_2.11" conf="default, compile, runtime, master" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="0.1.14"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="compile, runtime" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="2.3.9"/>
+				<artifacts>
+					<artifact name="akka-actor_2.11" type="jar" ext="jar" status="no" details="" size="2631202" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.3.11/akka-actor_2.11-2.3.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.3.9" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.3.11"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="compile, runtime" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="2.3.9"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-akka-2.3.9_2.11" conf="default, compile, runtime, master" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="0.1.14"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="compile, runtime" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="2.3.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.2.1" status="release" pubdate="20140502105416" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2723" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="file:/Users/gabriele.derossi/activator-1.3.2/repository/com.typesafe/config/1.2.1/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.11"/>
+				<caller organisation="com.typesafe.trace" name="echo-event211-protobuf25_2.11" conf="compile, runtime" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="0.1.14"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="219554" time="0" location="/Users/gabriele.derossi/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar">
+						<origin-location is-local="false" location="file:/Users/gabriele.derossi/activator-1.3.2/repository/com.typesafe/config/1.2.1/bundles/config.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.6" status="release" pubdate="20150225170105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.6/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/gabriele.derossi/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.pom"/>
+				<caller organisation="default" name="reactiveopencv_2.11" conf="compile, echo-trace-compile, runtime-internal, runtime, optional" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.3.11"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace211-protobuf25_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="0.1.14"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.3.9"/>
+				<caller organisation="org.scalafx" name="scalafx_2.11" conf="default, compile, runtime, master" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="8.0.0-R4"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-akka-2.3.9_2.11" conf="default, compile, runtime, master" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="0.1.14"/>
+				<caller organisation="com.typesafe.trace" name="echo-event211-protobuf25_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="0.1.14"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.3.9"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-scala-protobuf25-2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="0.1.14"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5564007" time="0" location="/Users/gabriele.derossi/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.11.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.6"/>
+				<caller organisation="org.scalafx" name="scalafx_2.11" conf="default, compile, runtime, master" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="8.0.0-R4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.6"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.3.11"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace211-protobuf25_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="0.1.14"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.3.9"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-akka-2.3.9_2.11" conf="default, compile, runtime, master" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="0.1.14"/>
+				<caller organisation="com.typesafe.trace" name="echo-event211-protobuf25_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="0.1.14"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.3.9"/>
+				<caller organisation="com.typesafe.trace" name="echo-trace-scala-protobuf25-2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="0.1.14"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

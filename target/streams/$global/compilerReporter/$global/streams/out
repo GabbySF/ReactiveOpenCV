@@ -1,0 +1,31 @@
+[0m[[31merror[0m] [0m/Users/gabriele.derossi/scala-workspace/ReactiveOpenCV/src/main/scala/com/example/ApplicationMain.scala:3: object opencv is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.opencv.core.Core[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/gabriele.derossi/scala-workspace/ReactiveOpenCV/src/main/scala/com/example/ApplicationMain.scala:4: object opencv is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.opencv.core.Mat[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/gabriele.derossi/scala-workspace/ReactiveOpenCV/src/main/scala/com/example/ApplicationMain.scala:5: object opencv is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.opencv.core.CvType[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/gabriele.derossi/scala-workspace/ReactiveOpenCV/src/main/scala/com/example/ApplicationMain.scala:6: object opencv is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.opencv.highgui.VideoCapture[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/gabriele.derossi/scala-workspace/ReactiveOpenCV/src/main/scala/com/example/ApplicationMain.scala:7: object opencv is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.opencv.highgui.Highgui[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/gabriele.derossi/scala-workspace/ReactiveOpenCV/src/main/scala/com/example/ApplicationMain.scala:21: not found: value Core[0m
+[0m[[31merror[0m] [0m      System.loadLibrary( Core.NATIVE_LIBRARY_NAME )[0m
+[0m[[31merror[0m] [0m                          ^[0m
+[0m[[31merror[0m] [0m/Users/gabriele.derossi/scala-workspace/ReactiveOpenCV/src/main/scala/com/example/ApplicationMain.scala:22: not found: type VideoCapture[0m
+[0m[[31merror[0m] [0m      val webcam:VideoCapture = new VideoCapture()[0m
+[0m[[31merror[0m] [0m                 ^[0m
+[0m[[31merror[0m] [0m/Users/gabriele.derossi/scala-workspace/ReactiveOpenCV/src/main/scala/com/example/ApplicationMain.scala:22: not found: type VideoCapture[0m
+[0m[[31merror[0m] [0m      val webcam:VideoCapture = new VideoCapture()[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0m/Users/gabriele.derossi/scala-workspace/ReactiveOpenCV/src/main/scala/com/example/ApplicationMain.scala:25: not found: type Mat[0m
+[0m[[31merror[0m] [0m      val frame:Mat = new Mat()[0m
+[0m[[31merror[0m] [0m                ^[0m
+[0m[[31merror[0m] [0m/Users/gabriele.derossi/scala-workspace/ReactiveOpenCV/src/main/scala/com/example/ApplicationMain.scala:25: not found: type Mat[0m
+[0m[[31merror[0m] [0m      val frame:Mat = new Mat()[0m
+[0m[[31merror[0m] [0m                          ^[0m
+[0m[[31merror[0m] [0m10 errors found[0m
